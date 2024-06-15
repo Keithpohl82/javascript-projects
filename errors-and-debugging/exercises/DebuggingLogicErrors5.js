@@ -27,7 +27,7 @@ if (crewStatus && computerStatus === 'green'){
 
 if (fuelReady && crewReady && computerStatus === "green"){
    console.log("10,9,8,7,6,5,4,3,2,1");
-   console.log("Liftoff")
+   console.log("Liftoff");
 } else {
-   console.log("Launch scrubbed")
+   console.log("Launch scrubbed");
 }
