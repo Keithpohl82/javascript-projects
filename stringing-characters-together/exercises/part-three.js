@@ -10,9 +10,11 @@ console.log(`${language[0]}${language[4]} `)
 let initials = language.slice(0,1)+language.slice(4,5);
 console.log(`The abbreviation for '${language}' is '${initials}'.`)
 //4. Just for fun, try chaining 3 or more methods together, and then print the result.
-language.indexOf("Java")
+let newString = language.trim().slice(0,4).toUpperCase();
+console.log(newString);
 //Part Three section Two
 
 //1. Use the string methods you know to print 'Title Case' from the string 'title case'.
 
 let notTitleCase = 'title case';
+console.log(`${notTitleCase[0].toUpperCase()}itle ${notTitleCase[6].toUpperCase()}ase`)
