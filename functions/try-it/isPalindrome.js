@@ -1,5 +1,8 @@
+let str = "Keith";
+
 function reverse(str) {
    return str.split('').reverse().join('');
+   
 }
 
 function isPalindrome(str) {
