@@ -1,47 +1,31 @@
 //////////makeline function////////////
-function makeLine(size){
+function makeLine(length){
     let line = "";
-    for(i = 0; i < size; i++){
+    for(let i = 0; i < length; i++){
        line += "#"; 
     }
     return line;
 }
-console.log(makeLine(28));
+//console.log(makeLine(4));
 
 
 /////////makeSquare function////////
 function makeSquare(size){
-
+    let squareShape = "";
+    for(let i = 0; i < size; i++){
+        squareShape += makeLine(size) + "\n";
+        
+    }
+    return squareShape;
 }
-console.log(makeSquare(4));
+console.log(makeSquare(3));
 
 
-/////////makeRectangle function////////
 function makeRectangle(width, height){
-
+    let rectangle = "";
+    for(i = 0; i < height; i++){
+        rectangle += (makeLine(width) + '\n');
+    }
+    return rectangle;
 }
-console.log(makeRectangle(2,7));
-
-
-/////////makeDownwardStairs function////////
-function makeDownwardStairs(height){
-
-}
-
-
-/////////makeSpaceLine function////////
-function makeSpaceLine(numSpaces, numChars){
-
-}
-
-
-/////////makeIsoscelesTriangle function////////
-function makeIsoscelesTriangle(height){
-
-}
-
-
-/////////makeDiamond function////////
-function makeDiamond(height){
-
-}
+console.log(makeRectangle(3, 7));
