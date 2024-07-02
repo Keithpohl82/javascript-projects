@@ -2,22 +2,38 @@ function findMinValue(arr){
   let min = arr[0];
   for (i = 0; i < arr.length; i++){
     if (arr[i] < min){
-      min = arr[i];
+      min = arr[i];   
     }
   }
   return min;
 }
 
-//Create a function with an array of numbers as its parameter. This function will return a new array with the numbers sorted from least to greatest value.
+/*Create a function with an array of numbers as its parameter. 
+This function will return a new array with the numbers sorted from least to greatest value.*/
 
 /*Within the function:
-1) Define a new, empty array to hold the final sorted numbers.
+1) Define a new, empty array to hold the final sorted numbers. DONE
 2) Use the findMinValue function to find the minimum value in the old array.
 3) Add the minimum value to the new array, and remove the minimum value from the old array.
 4) Repeat parts b & c until the old array is empty.
 5) Return the new sorted array.
 6) Be sure to print the results in order to verify your code.*/
+let testArray = [34, 73, 18, 20, 736];
 
+function sortedArray(arr){
+  let newArray = [];
+
+  while(arr.length !== 0){
+    let num = findMinValue(arr) ;
+    let numIndex = arr.indexOf(num);
+    arr.splice(numIndex, 1);
+    newArray.push(num);
+    console.log(arr);
+  }
+
+  return newArray;
+}
+console.log(sortedArray(testArray));
 //Your function here...
 
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
