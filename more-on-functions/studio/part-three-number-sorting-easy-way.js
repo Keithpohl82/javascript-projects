@@ -21,16 +21,14 @@ function sortedArrayAscending(arr){
       let num = findMinValue(arr) ;
       let numIndex = arr.indexOf(num);
       arr.splice(numIndex, 1);
-      newAscendingArray.push(num);
-      
+      newAscendingArray.push(num);   
     }
-  
     return newAscendingArray;
   }
-
   console.log(sortedArrayAscending(nums1));
-//Sort each array in descending order.
 
+
+//Sort each array in descending order.
 function sortedArrayDescending(arr){
     let newdDescendingArray = [];
   
@@ -39,10 +37,7 @@ function sortedArrayDescending(arr){
       let numIndex = arr.indexOf(num);
       arr.splice(numIndex, 1);
       newdDescendingArray.push(num);
-     
-      
     }
-  
     return newdDescendingArray.reverse();
   }
   console.log(sortedArrayDescending(nums2));

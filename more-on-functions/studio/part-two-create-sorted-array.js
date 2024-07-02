@@ -18,6 +18,7 @@ This function will return a new array with the numbers sorted from least to grea
 4) Repeat parts b & c until the old array is empty.
 5) Return the new sorted array.
 6) Be sure to print the results in order to verify your code.*/
+
 let testArray = [34, 73, 18, 20, 736];
 
 function sortedArray(arr){
@@ -30,10 +31,10 @@ function sortedArray(arr){
     newArray.push(num);
     console.log(arr);
   }
-
   return newArray;
 }
 console.log(sortedArray(testArray));
+
 //Your function here...
 
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
