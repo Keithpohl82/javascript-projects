@@ -1,5 +1,10 @@
-describe("transmission processor", function() {
+ const processor = require('../processor.js');
 
-   //  TODO: put tests here
- 
+ describe("transmission processor", function() {
+
+    test("takes a string and returns an object", function() {
+       let result = processor("9701::<489584872710>");
+       expect(typeof result).toBe("object");
+    });
+
  });
