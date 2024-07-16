@@ -5,3 +5,11 @@
 // However, if the denominator is zero you should throw the error, "Attempted to divide by zero."
 
 // Code your divide function here:
+function divide(num, denom){
+    if(denom === 0){
+        throw Error("Attempted to divide by zero");
+    }
+    return num / denom;
+}
+
+console.log(divide(20,5));

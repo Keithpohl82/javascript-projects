@@ -2,7 +2,13 @@ function gradeLabs(labs) {
   for (let i=0; i < labs.length; i++) {
     let lab = labs[i];
     let result = lab.runLab(3);
+
     console.log(`${lab.student} code worked: ${result === 27}`);
+  }
+  try {
+    result;
+  } catch (err) {
+    result = console.log("Error Thrown");
   }
 }
 
@@ -10,7 +16,7 @@ let studentLabs = [
   {
     student: 'Carly',
     runLab: function (num) {
-        return Math.pow(num, num);
+      //return Math.pow(num, num);
     }
   },
   {
@@ -22,3 +28,4 @@ let studentLabs = [
 ];
 
 gradeLabs(studentLabs);
+
