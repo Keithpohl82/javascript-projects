@@ -20,7 +20,7 @@ class Manual extends Book {
         super(title, author, copyright, isbn, pages, timesCheckedOut, discarded);
     }
     dispose(currentYear){
-        console.log(currentYear);
+        
         if (currentYear - this.copyright > 5){
             this.discarded = "yes";
         }
@@ -42,12 +42,8 @@ class Novel extends Book {
 let prideandPrejudice = new Novel("Pride and Prejudice", "Jane Austen", 1813, "1111111111111", 432, 32, "No");
 let shuttleBuild = new Manual("Top Secret Shuttle Building Manual", "Redacted", 2013, "0000000000000", 1147, 1, "No");
 
-console.log(shuttleBuild);
-console.log(prideandPrejudice);
+
 // Code exercises 4 & 5 here:
 
 prideandPrejudice.checkout(5);
 shuttleBuild.dispose(2024);
-
-console.log(shuttleBuild);
-console.log(prideandPrejudice);
