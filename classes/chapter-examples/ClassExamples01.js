@@ -19,3 +19,6 @@ console.log(fox);
 console.log(fox.age, fox.color);
 
 //Try modifying or adding properties below.
+
+let hippo = new Astronaut("Hippo", 25, 1500);
+console.log(hippo);
