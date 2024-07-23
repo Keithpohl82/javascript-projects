@@ -19,6 +19,7 @@ class Manual extends Book {
     constructor(title, author, copyright, isbn, pages, timesCheckedOut, discarded){
         super(title, author, copyright, isbn, pages, timesCheckedOut, discarded);
     }
+    this.title = title;
     dispose(currentYear){
         
         if (currentYear - this.copyright > 5){
