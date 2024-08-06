@@ -15,7 +15,7 @@ function init () {
      });
     
      missionAbort.addEventListener("click", event => {
-       let text = confirm("Are you sure you want to abort the mission?");
+        confirm("Are you sure you want to abort the mission?");
        
         paragraph.innerHTML = "Mission aborted! Space shuttle returning home"; 
      
