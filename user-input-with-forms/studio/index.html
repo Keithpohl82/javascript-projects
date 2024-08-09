@@ -6,9 +6,9 @@
 		event.preventDefault();
 		let actions = {
 		google: "https://www.google.com/search",
-          duckDuckGo: "https://duckduckgo.com/",
-          bing: "https://www.bing.com/search",
-          ask: "https://www.ask.com/web",
+        duckDuckGo: "https://duckduckgo.com/",
+        bing: "https://www.bing.com/search",
+        ask: "https://www.ask.com/web",
         };
 		const searchTerm = document.querySelector('input[name="q"]').value.trim();
 		const selectedEngine = document.querySelector('input[name="engine"]:checked');
@@ -37,9 +37,7 @@
     });
 	</script>
 </head>
-
 <body>
-
 	<form id="searchForm">
     <!-- TODO: add form elements -->
 	 <input type="text" name="q">
@@ -62,5 +60,4 @@
 	 <button type="submit" value="go">Go</button>
 	 <div id="error-message" class="error"></div>
 	</form>
-	
 </body>
